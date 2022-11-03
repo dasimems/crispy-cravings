@@ -6,8 +6,8 @@ function Hero(props) {
   return (
     <div className="py-5 bg-dark hero-header">
       <div className="container my-5 py-5">
-        <div className="row align-items-center g-5">
-          <div className="col-lg-6 text-center text-lg-start">
+        <div className="row align-items-center ">
+          <div className="col-lg-6 text-center  text-lg-start">
             <h1 className="display-3 text-white animated slideInLeft">
               Enjoy Our
               <br />

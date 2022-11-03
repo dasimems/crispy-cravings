@@ -10,7 +10,7 @@ function Navbar(props) {
   return (
     <header>
       <div className="container-xxl position-relative p-0">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 ">
           <Link to="/" className="navbar-brand p-0">
             <img src={logo} alt="Logo" />
           </Link>

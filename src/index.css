@@ -7,6 +7,9 @@ body, *{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.text-primary {
+  color: var(--pink) !important;
+}
 
 :root {
   --primary: #fbbf09;

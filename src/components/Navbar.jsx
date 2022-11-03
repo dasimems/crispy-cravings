@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+
 import { links } from "../utils/constant";
 
 import logo from "../asset/logo.png";
@@ -18,7 +20,7 @@ function Navbar(props) {
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
           >
-            <span className="fa fa-bars"></span>
+            <FaBars />
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0 pe-4">

@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+body, *{
+  margin: 0;
+  font-family:'Poppins', sans-serif  !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 :root {
-  --primary: #FEA116;
+  --primary: #fbbf09;
   --light: #F1F8FF;
+  --pink: #ff006e;
   --dark: #0F172B;
 }
 
@@ -22,11 +33,13 @@
   font-weight: 500;
   text-transform: uppercase;
   transition: .5s;
+  border-width: 0px;
 }
 
-.btn.btn-primary,
-.btn.btn-secondary {
+.btn-primary,
+.btn-secondary {
   color: #FFFFFF;
+  background-color: var(--pink);
 }
 
 .btn-square {
@@ -131,6 +144,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero-header h1 {
+  font-weight: 700;
 }
 
 .hero-header img {

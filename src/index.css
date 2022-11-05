@@ -11,6 +11,14 @@ body, *{
   color: var(--pink) !important;
 }
 
+a {
+  text-decoration: none;
+  color: #F1F8FF;
+}
+a:hover {
+  color: var(--pink);
+}
+
 :root {
   --primary: #fbbf09;
   --light: #F1F8FF;
@@ -165,4 +173,110 @@ body, *{
 
 .breadcrumb-item + .breadcrumb-item::before {
   color: rgba(255, 255, 255, .5);
+}
+
+/*** Team ***/
+.team-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  height: calc(100% - 38px);
+  background-color: var(--dark);
+}
+
+.square {
+  height: 70%;
+}
+
+.team-item img {
+  transition: .5s;
+}
+
+.content {
+  color: #F1F8FF;
+}
+
+.team-item .btn {
+  border-radius: 38px 38px 0 0;
+}
+
+
+/*********************************
+Footer
+*********************************/
+
+.ftco-footer {
+	font-size: 14px;
+  	padding: 2.5em 0;
+  	color: rgba(255, 255, 255, 0.8);
+  	background: #111111; 
+}
+.ftco-footer .logo {
+	margin-bottom: 3rem;
+}
+.ftco-footer .ftco-footer-widget h2 {
+	font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+}
+.ftco-footer .ftco-footer-widget ul li {
+    font-size: 14px;
+    margin-bottom: 0px; 
+}
+.ftco-footer .ftco-footer-widget ul li a {
+    color: rgba(255, 255, 255, 0.8); 
+}
+.ftco-footer .ftco-footer-widget .btn-primary {
+    border: 2px solid #fff !important; 
+}
+.ftco-footer .ftco-footer-widget .btn-primary:hover {
+    border: 2px solid #fff !important; 
+}
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block; 
+}
+.ftco-footer-social li a {
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: left;
+    background: #fff;
+    border-radius: 50%;
+    position: relative; 
+}
+.ftco-footer-social li a svg {
+    position: absolute;
+    font-size: 26px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #111111; 
+}
+.ftco-footer-social li a:hover {
+    color: #000000; 
+}
+.block-23 ul {
+	padding: 0; 
+}
+.block-23 ul li, .block-23 ul li > a {
+	display: table;
+	line-height: 1.5;
+	margin-bottom: 15px; 
+}
+.block-23 ul li .icon, .block-23 ul li .text {
+	display: table-cell;
+	vertical-align: top; 
+	
+}
+.block-23 ul li .icon {
+	width: 40px;
+	font-size: 18px;
+	padding-top: 2px; 
 }

@@ -1,11 +1,12 @@
 import React from "react";
-import { AboutUs, Hero } from "../components/index";
+import { AboutUs, Hero, Team } from "../components/index";
 
 function Home(props) {
   return (
     <div>
       <Hero />
       <AboutUs />
+      <Team />
     </div>
   );
 }

@@ -8,7 +8,7 @@ function AboutUs(props) {
   return (
     <div className="container-xxl py-5">
       <div className="container">
-        <div className="row g-5 align-items-center">
+        <div className="row g-5 flex-column-reverse flex-lg-row align-items-center">
           <div className="col-lg-6">
             <div className="row g-3">
               <div className="col-6 text-start">

@@ -34,7 +34,7 @@ function Navbar(props) {
               })}
             </div>
             <Link to="/" className="btn btn-primary py-2 px-4">
-              Book A Table
+              Order Now
             </Link>
           </div>
         </nav>

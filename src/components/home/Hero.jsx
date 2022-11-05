@@ -22,7 +22,7 @@ function Hero(props) {
               to="/"
               className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
             >
-              Book A Table
+              Order Now
             </Link>
           </div>
           <div className="col-lg-6 text-center text-lg-end overflow-hidden">

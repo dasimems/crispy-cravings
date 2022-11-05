@@ -59,7 +59,7 @@ export const links = [
       id: 3,
       icon: <BiMailSend />,
       url: "/",
-      text: "info@mumiah.shop"
+      text: "info@crispycravingscafe.com"
     }
   ]
 

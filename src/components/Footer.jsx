@@ -75,7 +75,7 @@ function Footer(props) {
             <div className="col-md-12 text-center">
               <p>
                 Copyright &copy; {new Date().getFullYear()} All rights reserved
-                | Mumiah Fashion
+                | Crispy Cravings
               </p>
             </div>
           </div>

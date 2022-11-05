@@ -5,7 +5,7 @@ function Team(props) {
   return (
     <div className="container-xxl pt-5 pb-3">
       <div className="container">
-        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <div className="text-center">
           <h5 className="section-title ff-secondary text-center text-primary fw-normal">
             Team Members
           </h5>

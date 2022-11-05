@@ -233,6 +233,30 @@ a:hover {
   border-radius: 38px 38px 0 0;
 }
 
+/*** Service ***/
+.service-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  transition: .5s;
+}
+
+.service-item:hover {
+  background: var(--pink);
+}
+
+.service-item * {
+  transition: .5s;
+}
+
+.service-item:hover * {
+  color: var(--light) !important;
+}
+
+.service-item svg {
+  color: var(--pink);
+  font-size: 40px;
+}
+
+
 
 /*********************************
 Footer

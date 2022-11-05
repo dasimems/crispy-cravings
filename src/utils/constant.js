@@ -2,7 +2,10 @@ import React from 'react'
 import { AiOutlineTwitter, AiFillFacebook, AiOutlineInstagram } from "react-icons/ai"
 import { ImLocation2, ImPhone } from "react-icons/im"
 import { BiMailSend } from "react-icons/bi"
-
+import { GiCook, GiKnifeFork } from "react-icons/gi"
+import { BsFillCartCheckFill } from "react-icons/bs"
+import { MdSupportAgent } from "react-icons/md"
+ 
 import team1 from "../asset/team1.jpg"
 import team2 from "../asset/team2.jpg"
 
@@ -61,6 +64,33 @@ export const links = [
       url: "/",
       text: "info@crispycravingscafe.com"
     }
+  ]
+
+  export const service = [
+    {
+      id: 1,
+      title: "Master Chefs",
+      content: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      icon: <GiCook />
+    },
+    {
+      id: 2,
+      title: "Quality Food",
+      content: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      icon: <GiKnifeFork  />
+    },
+    {
+      id: 3,
+      title: "Order Online",
+      content: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      icon: <BsFillCartCheckFill />
+    },
+    {
+      id: 4,
+      title: "24/7 Services",
+      content: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      icon: <MdSupportAgent />
+    },
   ]
 
   export const team = [

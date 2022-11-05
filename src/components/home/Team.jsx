@@ -15,7 +15,7 @@ function Team(props) {
           {team.map((item) => {
             const { id, name, profession, image } = item;
             return (
-              <div className="col-lg-3 col-md-6 wow fadeInUp" key={id}>
+              <div className="col-lg-4 col-md-6 wow fadeInUp" key={id}>
                 <div className="team-item text-center rounded overflow-hidden">
                   <div className="square overflow-hidden m-4">
                     <img className="img-fluid" src={image} alt="" />

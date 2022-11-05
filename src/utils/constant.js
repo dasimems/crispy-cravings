@@ -106,17 +106,5 @@ export const links = [
       profession: "Chef",
       image: team2
     },
-    {
-      id: 3,
-      name: "Kosiso Ekwem",
-      profession: "Manager",
-      image: team1
-    },
-    {
-      id: 4,
-      name: "Kosiso Ekwem",
-      profession: "Exec.",
-      image: team2
-    },
   ]
   export const products_url = 'https://course-api.com/react-store-products'

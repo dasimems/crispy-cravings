@@ -2,7 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaUtensils } from "react-icons/fa";
 
-import aboutImg from "../../asset/hero.png";
+import aboutImg1 from "../../asset/about-1.jpg";
+import aboutImg2 from "../../asset/about-2.jpg";
+import aboutImg3 from "../../asset/about-3.jpg";
+import aboutImg4 from "../../asset/about-4.jpg";
 
 function AboutUs(props) {
   return (
@@ -15,28 +18,28 @@ function AboutUs(props) {
                 <img
                   className="img-fluid rounded w-100 wow zoomIn"
                   data-wow-delay="0.1s"
-                  src={aboutImg}
+                  src={aboutImg1}
                 />
               </div>
               <div className="col-6 text-start">
                 <img
                   className="img-fluid rounded w-75 wow zoomIn"
                   data-wow-delay="0.3s"
-                  src={aboutImg}
+                  src={aboutImg2}
                 />
               </div>
               <div className="col-6 text-end">
                 <img
                   className="img-fluid rounded w-75 wow zoomIn"
                   data-wow-delay="0.5s"
-                  src={aboutImg}
+                  src={aboutImg3}
                 />
               </div>
               <div className="col-6 text-end">
                 <img
                   className="img-fluid rounded w-100 wow zoomIn"
                   data-wow-delay="0.7s"
-                  src={aboutImg}
+                  src={aboutImg4}
                 />
               </div>
             </div>

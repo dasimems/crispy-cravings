@@ -203,6 +203,32 @@
     font-style: unset;
 }
 
+.two-panes .main-menu .menu-items .--items .--item .content .actions {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.two-panes .main-menu .menu-items .--items .--item .content .actions button {
+    padding: 0.7em 1.2em;
+    background: #f00;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 0 0.5em;
+}
+
+.two-panes .main-menu .menu-items .--items .--item .content .actions button:active {
+    opacity: 0.7;
+}
+
+.two-panes .main-menu .menu-items .--items .--item .content .actions .--details {
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+}
+
 .two-panes .item-display {
     padding: 1em;
     background: #fff;

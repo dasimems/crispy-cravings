@@ -50,6 +50,11 @@ const MenuItems = () => {
                   <b>{filteredProduct?.quantity} pan</b> 
                   <i>Available</i>
                 </span>
+
+                <div className="actions">
+                  <button className="--order">Order</button>
+                  <button className="--details">Details</button>
+                </div>
               </div>
             </div>
           ))

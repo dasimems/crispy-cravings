@@ -52,7 +52,7 @@ function Footer(props) {
             </div>
             <div className="col-md">
               <div className="ftco-footer-widget mb-4">
-                <h2 className="ftco-heading-2">Have a Questions?</h2>
+                <h2 className="ftco-heading-2">Have a Question?</h2>
                 <div className="block-23 mb-3">
                   <ul>
                     {footerContact.map((item) => {

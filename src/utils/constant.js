@@ -5,7 +5,8 @@ import { BiMailSend } from "react-icons/bi"
 import { GiCook, GiKnifeFork } from "react-icons/gi"
 import { BsFillCartCheckFill } from "react-icons/bs"
 import { MdSupportAgent } from "react-icons/md"
- 
+
+import heroImg from "../asset/hero.png";
 import team1 from "../asset/team1.jpg"
 import team2 from "../asset/team2.jpg"
 
@@ -22,8 +23,8 @@ export const links = [
     },
     {
       id: 3,
-      text: 'products',
-      url: '/products',
+      text: 'menu',
+      url: '/menu',
     },
   ]
 
@@ -107,4 +108,50 @@ export const links = [
       image: team2
     },
   ]
+
+  export const productCategories = [
+    {
+      id: 1,
+      icon: <BsFillCartCheckFill />,
+      label: "cat1"
+    },
+        {
+      id: 2,
+      icon: <MdSupportAgent />,
+      label: "cat2"
+    },
+        {
+      id: 3,
+      icon: <GiKnifeFork  />,
+      label: "cat3"
+    }
+  ]
+
+  export const products = [
+    {
+      id: 1,
+      category: 1,
+      price: "40",
+      quantity: 5,
+      title: "pizza",
+      image: heroImg
+    },
+    {
+      id: 2,
+      category: 2,
+      price: "34",
+      quantity: 7,
+      title: "pizza hit",
+      image: team2
+    },
+    {
+      id: 3,
+      category: 3,
+      price: "56",
+      quantity: 7,
+      title: "pizza cool",
+      image: team2
+    }
+  ]
+
   export const products_url = 'https://course-api.com/react-store-products'

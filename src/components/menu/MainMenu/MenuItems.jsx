@@ -52,8 +52,7 @@ const MenuItems = () => {
                 </span>
 
                 <div className="actions">
-                  <button className="--order">Order</button>
-                  <button className="--details">Details</button>
+                  <button className="--order">Order Now</button>
                 </div>
               </div>
             </div>

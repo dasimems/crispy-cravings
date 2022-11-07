@@ -151,6 +151,54 @@ export const links = [
       quantity: 7,
       title: "pizza cool",
       image: team2
+    },
+    {
+      id: 4,
+      category: 1,
+      price: "40",
+      quantity: 5,
+      title: "pizza",
+      image: heroImg
+    },
+    {
+      id: 5,
+      category: 2,
+      price: "34",
+      quantity: 7,
+      title: "pizza hit",
+      image: team2
+    },
+    {
+      id: 6,
+      category: 3,
+      price: "56",
+      quantity: 7,
+      title: "pizza cool",
+      image: team2
+    },
+    {
+      id: 7,
+      category: 1,
+      price: "40",
+      quantity: 5,
+      title: "pizza",
+      image: heroImg
+    },
+    {
+      id: 8,
+      category: 2,
+      price: "34",
+      quantity: 7,
+      title: "pizza hit",
+      image: team2
+    },
+    {
+      id: 9,
+      category: 3,
+      price: "56",
+      quantity: 7,
+      title: "pizza cool",
+      image: team2
     }
   ]
 

@@ -7,7 +7,7 @@ const Menu = () => {
     <>
       <div className="two-panes">
         <MainMenu />
-        <ItemDisplay CurrentItem={products[0]} />
+        {/* <ItemDisplay CurrentItem={products[0]} /> */}
       </div>
     </>
   )

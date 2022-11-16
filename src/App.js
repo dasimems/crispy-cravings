@@ -7,10 +7,14 @@ function App(props) {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/menu' element={<Menu />}></Route>
-      </Routes>
+      <div className="body-content">
+        
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/menu' element={<Menu />}></Route>
+        </Routes>
+        
+      </div>
       <Footer />
   </Router>
   );

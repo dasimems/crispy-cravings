@@ -35,7 +35,7 @@ export const links = [
     {
       id: 4,
       text: 'Order Now',
-      url: '/menu',
+      url: '/',
       bordered: true,
       background: false
     },

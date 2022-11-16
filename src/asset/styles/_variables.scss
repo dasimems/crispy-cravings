@@ -1,8 +1,24 @@
+@font-face {
+    font-family: poppins;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: poppins-semibold;
+    src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
 $colors: (
     "primary": #ff006e,
     "default": black,
+    "defaultTwo": white,
     "secondary": #fbbf09,
-    "generalBackground": rgba(255, 0, 110, .05)
+    "generalBackground": #fcf3f7
 );
 
 $measurement: (
@@ -15,5 +31,5 @@ $measurement: (
 }
 
 @function getMeasurement($value){
-    @return map-get($colors, $value);
+    @return map-get($measurement, $value);
 }

@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+img {
+  width: 100%;
+}
+
 button {
   cursor: pointer;
   padding: 10px 20px;
@@ -14,8 +34,141 @@ button {
   -o-border-radius: 5px;
 }
 
+@font-face {
+  font-family: poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: poppins-semibold;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
 body {
   width: 100%;
   min-height: 100%;
-  background: rgba(255, 0, 110, 0.05);
+  background: #fcf3f7;
+  font-family: poppins;
+}
+body header {
+  height: 80px;
+  background: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+body header .header-content {
+  height: 100%;
+  width: 100%;
+}
+body header .header-content .logo {
+  width: 50px;
+  height: 50px;
+}
+body header .header-content .header-links {
+  width: auto;
+}
+body header .header-content .header-links ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+body header .header-content .header-links ul li:not(:first-child) {
+  margin-left: 80px;
+}
+body header .header-content .header-links ul li a {
+  font-size: 1.1rem;
+  position: relative;
+  color: black;
+  font-family: poppins-semibold;
+}
+body header .header-content .header-links ul li a::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  background: black;
+  width: 0%;
+  bottom: -4px;
+  height: 3px;
+}
+body header .header-content .header-links ul li a:hover::after {
+  width: 100%;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+}
+body header .header-content .header-links ul li.active-link a {
+  color: #ff006e;
+}
+body header .header-content .header-links ul li.active-link a::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  background: #ff006e;
+  width: 100%;
+  bottom: -4px;
+  height: 3px;
+}
+body header .header-content .header-links ul li.bordered-link a {
+  display: inline-flex;
+  border: 3px solid #ff006e;
+  color: #ff006e;
+  border-radius: 5px;
+  -webkit-border-radius: 5p;
+  -moz-border-radius: 5p;
+  -ms-border-radius: 5p;
+  -o-border-radius: 5p;
+  padding: 8px 20px;
+}
+body header .header-content .header-links ul li.bordered-link a:hover {
+  background: #ff006e;
+  color: white;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+}
+body header .header-content .header-links ul li.bordered-link a:hover::after, body header .header-content .header-links ul li.bordered-link a::after {
+  width: 0%;
+}
+body header .header-content .header-links ul li.background-link a {
+  display: inline-flex;
+  border: 3px solid #ff006e;
+  background: #ff006e;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5p;
+  -moz-border-radius: 5p;
+  -ms-border-radius: 5p;
+  -o-border-radius: 5p;
+  padding: 8px 20px;
+}
+body header .header-content .header-links ul li.background-link a:hover {
+  background: transparent;
+  color: #ff006e;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+}
+body header .header-content .header-links ul li.background-link a:hover::after, body header .header-content .header-links ul li.background-link a::after {
+  width: 0%;
+}
+body .body-content {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 80px;
 }/*# sourceMappingURL=index.css.map */

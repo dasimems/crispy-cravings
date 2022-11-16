@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 14px;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+img{
+    width: 100%;
+}
+
 button{
     cursor: pointer;
     padding: 10px 20px;

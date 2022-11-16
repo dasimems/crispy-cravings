@@ -1,0 +1,21 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background: rgba(255, 0, 110, 0.05);
+}/*# sourceMappingURL=index.css.map */

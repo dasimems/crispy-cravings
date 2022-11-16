@@ -6,25 +6,38 @@ import { GiCook, GiKnifeFork } from "react-icons/gi"
 import { BsFillCartCheckFill } from "react-icons/bs"
 import { MdSupportAgent } from "react-icons/md"
 
-import heroImg from "../asset/hero.png";
-import team1 from "../asset/team1.jpg"
-import team2 from "../asset/team2.jpg"
+import heroImg from "../asset/images/hero.png";
+import team1 from "../asset/images/team1.jpg"
+import team2 from "../asset/images/team2.jpg"
 
 export const links = [
     {
       id: 1,
-      text: 'home',
+      text: 'Home',
       url: '/',
+      bordered: false,
+      background: false
     },
     {
       id: 2,
-      text: 'about',
+      text: 'About Us',
       url: '/about',
+      bordered: false,
+      background: false
     },
     {
       id: 3,
-      text: 'menu',
+      text: 'Menu',
       url: '/menu',
+      bordered: false,
+      background: false
+    },
+    {
+      id: 4,
+      text: 'Order Now',
+      url: '/menu',
+      bordered: true,
+      background: false
     },
   ]
 

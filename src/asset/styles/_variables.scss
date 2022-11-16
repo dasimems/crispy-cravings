@@ -1,0 +1,19 @@
+$colors: (
+    "primary": #ff006e,
+    "default": black,
+    "secondary": #fbbf09,
+    "generalBackground": rgba(255, 0, 110, .05)
+);
+
+$measurement: (
+    "headerHeight": 80px,
+    "defaultPadding": 100px
+);
+
+@function getColor($value){
+    @return map-get($colors, $value);
+}
+
+@function getMeasurement($value){
+    @return map-get($colors, $value);
+}

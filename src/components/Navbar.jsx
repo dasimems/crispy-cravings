@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+// import { FaBars } from "react-icons/fa";
 
 import { links } from "../utils/constant";
 

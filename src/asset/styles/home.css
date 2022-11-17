@@ -196,4 +196,83 @@ button {
 .popular-dishes .slider-element .slider-content {
   width: 90%;
   height: auto;
+}
+
+.services {
+  width: 100%;
+  padding: 150px 0px;
+}
+.services .service-image {
+  position: relative;
+}
+.services .service-image .side-image {
+  position: absolute;
+  max-width: 150px;
+}
+.services .service-image .top {
+  top: 0px;
+  right: 0px;
+}
+.services .service-image .bottom {
+  bottom: 0px;
+  left: 0px;
+}
+.services .service-content h1 {
+  font-size: 3rem;
+  font-family: righteous;
+}
+.services .service-content .service-description {
+  font-size: 1.35rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.services .service-content .service-card-container {
+  width: 100%;
+  margin-top: 50px;
+}
+.services .service-content .service-card-container .service-card {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.services .service-content .service-card-container .service-card .service-card-image {
+  width: 50px;
+  height: 50px;
+  border: dashed 2px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 2rem;
+  color: #fbbf09;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .service-content .service-card-container .service-card .service-card-title {
+  margin: 0px;
+  margin-left: 20px;
+  font-size: 1.35rem;
+  font-family: righteous;
+  color: rgba(0, 0, 0, 0.75);
+}
+.services .service-content .button {
+  margin-top: 20px;
+  background: #ff006e;
+  color: white;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: 3px solid #ff006e;
+}
+.services .service-content .button:hover {
+  background: transparent;
+  color: #ff006e;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
 }/*# sourceMappingURL=home.css.map */

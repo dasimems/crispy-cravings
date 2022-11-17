@@ -3,10 +3,13 @@ import React from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { dishes, products } from "../utils/constant"
+import { dishes, products, service } from "../utils/constant"
 
 import "../asset/styles/home.css"
 import { Dishes, ImageAnimation } from "../components";
+import ServiceImage from "../asset/images/service_image.png"
+import VegetableOne from "../asset/images/vegetables_1.png"
+import VegetableTwo from "../asset/images/vegetables_2.png"
 
 function Home(props) {
 
@@ -159,6 +162,63 @@ function Home(props) {
             </Col>
 
       
+      </Row>
+
+      <Row justify="center" className="services">
+      
+            <Col span={22}>
+            
+                  <Row justify="space-between">
+                  
+                    <Col span={11} className="service-image">
+                    
+                        <img src={VegetableOne} className="side-image top" alt="vegetable" />
+                        <img src={ServiceImage} alt="chef with food" />
+                        <img src={VegetableTwo} className="side-image bottom" alt="vegetable" />
+
+                    </Col>
+                    <Col span={11} className="service-content">
+                    
+                      <h1>We are more than multiple service</h1>
+
+                      <p className="service-description">This is a type of restuarant which typically serves food and drinks, in addition to light refreshments such as baked goods or snacks</p>
+
+                      <div className="service-card-container">
+                      
+                        <Row justify="space-between">
+
+                          {service.map((serviceContent, index)=>{
+
+                            var {icon, title} = serviceContent;
+
+                            return(
+                              <Col key={index} span={11} className="service-card">
+                              
+                                <div className="service-card-image">
+                                
+                                  {icon}
+
+                                </div>
+
+                                <p className="service-card-title">{title}</p>
+
+                              </Col>
+                            )
+
+                          })}
+                        
+                        </Row>
+                      
+                      </div>
+
+                      <Link className="button" to="/about">About Us</Link>
+
+                    </Col>
+                    
+                  </Row>
+
+            </Col>
+
       </Row>
     
     </>

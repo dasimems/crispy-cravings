@@ -70,6 +70,13 @@ body {
   background: #fcf3f7;
   font-family: poppins;
 }
+body .slider-element {
+  margin-top: 40px;
+}
+body .slider-element .slider-content {
+  width: 90%;
+  height: auto;
+}
 body .animation-content {
   width: 100%;
   position: relative;
@@ -227,6 +234,41 @@ body .dish-card .dish-action .button:hover {
   -moz-transition: 0.5s ease all;
   -ms-transition: 0.5s ease all;
   -o-transition: 0.5s ease all;
+}
+body .customer-review-card {
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: #ffe6f1;
+}
+body .customer-review-card p {
+  font-size: 1.1rem;
+}
+body .customer-review-card .review-details {
+  display: flex;
+  align-items: center;
+}
+body .customer-review-card .review-details .review-image {
+  width: 80px;
+  height: 80px;
+  background: #fcf3f7;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+body .customer-review-card .review-details .review-image img {
+  width: 100%;
+}
+body .customer-review-card .review-details h2 {
+  font-size: 1.3rem;
+  font-family: righteous;
 }
 body header {
   height: 80px;

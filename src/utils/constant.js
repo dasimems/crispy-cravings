@@ -14,6 +14,9 @@ import Dish2 from "../asset/images/dish_2.png"
 import Dish3 from "../asset/images/dish_3.png"
 import Dish4 from "../asset/images/dish_4.png"
 import Dish5 from "../asset/images/dish_5.png"
+import ProfileOne from "../asset/images/profile_image.jpg"
+import ProfileTwo from "../asset/images/profile_image_1.jpg"
+import ProfileThree from "../asset/images/profile_image_2.jpg"
 
 export const links = [
     {
@@ -286,6 +289,38 @@ export const links = [
       quantity: 7,
       title: "pizza cool",
       image: team2
+    }
+  ]
+
+  export const review = [
+    {
+      name: "Duyil Ayomid",
+      image: ProfileOne,
+      review: "This place is great! The atmosphere is cool and the staff is really friendly. They really do offer a great service and it can be foretold from the customers expression that they are all happy."
+    },
+
+    {
+      name: "Duyil Ayomid",
+      image: ProfileTwo,
+      review: "This place is great! The atmosphere is cool and the staff is really friendly. They really do offer a great service and it can be foretold from the customers expression that they are all happy."
+    },
+
+    {
+      name: "Duyil Ayomid",
+      image: ProfileThree,
+      review: "This place is great! The atmosphere is cool and the staff is really friendly. They really do offer a great service and it can be foretold from the customers expression that they are all happy."
+    },
+
+    {
+      name: "Duyil Ayomid",
+      image: team1,
+      review: "This place is great! The atmosphere is cool and the staff is really friendly. They really do offer a great service and it can be foretold from the customers expression that they are all happy."
+    },
+
+    {
+      name: "Duyil Ayomid",
+      image: team2,
+      review: "This place is great! The atmosphere is cool and the staff is really friendly. They really do offer a great service and it can be foretold from the customers expression that they are all happy."
     }
   ]
 

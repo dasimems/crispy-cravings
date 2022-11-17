@@ -190,13 +190,6 @@ button {
   -ms-transition: 0.5s ease all;
   -o-transition: 0.5s ease all;
 }
-.popular-dishes .slider-element {
-  margin-top: 40px;
-}
-.popular-dishes .slider-element .slider-content {
-  width: 90%;
-  height: auto;
-}
 
 .services {
   width: 100%;
@@ -329,4 +322,44 @@ button {
 .menu-pack .dishes-container .dishes-content {
   margin-right: 4.1%;
   margin-bottom: 30px;
+}
+
+.review {
+  padding: 150px 0px;
+}
+.review .review-header-content h1 {
+  font-size: 2.4rem;
+  font-family: righteous;
+}
+.review .review-header-content .review-nav {
+  display: flex;
+  align-items: center;
+}
+.review .review-header-content .review-nav button {
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  color: #ff006e;
+  border: 3px solid #ff006e;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review .review-header-content .review-nav button:not(:first-child) {
+  margin-left: 10px;
+}
+.review .review-header-content .review-nav button:hover {
+  background: #ff006e;
+  color: white;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
 }/*# sourceMappingURL=home.css.map */

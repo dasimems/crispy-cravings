@@ -3,10 +3,10 @@ import React from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight, FaPlus, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { dishes, productCategories, products, service } from "../utils/constant"
+import { dishes, productCategories, products, review, service } from "../utils/constant"
 
 import "../asset/styles/home.css"
-import { Dishes, ImageAnimation } from "../components";
+import { CustomerReview, Dishes, ImageAnimation } from "../components";
 import ServiceImage from "../asset/images/service_image.png"
 import VegetableOne from "../asset/images/vegetables_1.png"
 import VegetableTwo from "../asset/images/vegetables_2.png"
@@ -16,6 +16,7 @@ import { useEffect } from "react";
 function Home(props) {
 
     var sliderRef;
+    var reviewRef;
     const [productCats, setProductCats] = useState([]);
     const [presentCat, setPresentCat] = useState("");
 
@@ -42,6 +43,42 @@ function Home(props) {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
+
+    var reviewSettings = {
+      dots: false,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      initialSlide: 0,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
             initialSlide: 2
           }
         },
@@ -314,6 +351,64 @@ function Home(props) {
             </Row>
         
         </Col>
+      
+      </Row>
+
+      <Row justify="center" className="review">
+
+        <Col span={22}>
+
+          <Row justify="space-between" className="review-header-content">
+          
+            <h1 className="review-header">What our customer says</h1>
+
+            <div className="review-nav">
+            
+                
+              <Button className="prev-button" onClick={()=>{
+                reviewRef.slickPrev();
+              }}>
+              
+                <FaArrowLeft />
+
+              </Button>
+
+              <Button className="next-button" onClick={()=>{
+                reviewRef.slickNext();
+              }}>
+              
+                <FaArrowRight />
+
+              </Button>
+            
+            </div>
+          
+          </Row>
+
+          <Slider ref={c => reviewRef = c} {...reviewSettings} className="slider-element">
+
+              {review.map((reviewData, index)=>{
+                return(
+                  
+                  <div key={index}>
+                    <div className="slider-content">
+
+                      <CustomerReview data={reviewData} />
+
+                    </div>
+                  </div>
+                )
+              })}
+  
+
+
+          </Slider>
+        
+        </Col>
+
+
+
+
       
       </Row>
     

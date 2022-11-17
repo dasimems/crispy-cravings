@@ -164,16 +164,6 @@
         }
     }
 
-    .slider-element{
-        margin-top: 40px;
-
-        .slider-content{
-            width: 90%;
-            height: auto;
-            // border: 1px solid red;
-        }
-    }
-
 }
 
 .services{
@@ -340,4 +330,53 @@
         }
     }
 
+}
+
+.review{
+    padding: getMeasurement("defaultPadding") 0px;
+
+    .review-header-content{
+
+        h1{
+            font-size: 2.4rem;
+            font-family: righteous;
+
+        }
+
+        .review-nav{
+            display: flex;
+            align-items: center;
+
+            button{
+                padding: 0px;
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                color: getColor("primary");
+                border: 3px solid getColor("primary");
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:not(:first-child){
+                    margin-left: 10px;
+                }
+
+                &:hover{
+                    background: getColor("primary");
+                    color: getColor("defaultTwo");
+                    transition: 0.5s ease all;
+                    -webkit-transition: 0.5s ease all;
+                    -moz-transition: 0.5s ease all;
+                    -ms-transition: 0.5s ease all;
+                    -o-transition: 0.5s ease all;
+                }
+            }
+        }
+    }
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import { products } from "../utils/constant"
+// import { products } from "../utils/constant"
 
 const Menu = () => {
   return (

@@ -1,19 +1,22 @@
 import { Button, Col, Row } from "antd";
 import React from "react";
 import Slider from "react-slick";
-import { FaArrowLeft, FaArrowRight, FaSearch } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaPlus, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { dishes, products, service } from "../utils/constant"
+import { dishes, productCategories, products, service } from "../utils/constant"
 
 import "../asset/styles/home.css"
 import { Dishes, ImageAnimation } from "../components";
 import ServiceImage from "../asset/images/service_image.png"
 import VegetableOne from "../asset/images/vegetables_1.png"
 import VegetableTwo from "../asset/images/vegetables_2.png"
+import { useState } from "react";
+import { useEffect } from "react";
 
 function Home(props) {
 
     var sliderRef;
+    const [productCats, setProductCats] = useState([]);
 
     var settings = {
       dots: false,
@@ -50,6 +53,33 @@ function Home(props) {
         }
       ]
     };
+
+    useEffect(()=>{
+
+      if(productCategories.length < 8){
+        setProductCats(productCategories)
+      }else{
+
+        var newProdCat = []
+        productCategories.forEach((prod, index) => {
+
+          if(index < 6){
+            newProdCat.push(prod);
+          }
+
+        })
+
+        newProdCat.push({
+          id: (newProdCat.length + 1),
+          label: "See More",
+          icon: <FaPlus />
+        })
+
+        setProductCats(newProdCat)
+
+      }
+
+    }, [])
 
   return (
     <>
@@ -219,6 +249,58 @@ function Home(props) {
 
             </Col>
 
+      </Row>
+
+      <Row justify="center" className="menu-pack">
+      
+        <Col span={22}>
+        
+            <h2 className="pack-title">Our Regular Menu Pack</h2>
+
+            <Row justify="center" className="pack-menus">
+
+                  {productCats.map((cat, index)=>{
+
+                    var {label} = cat,
+                      catClassName = "menu-btn";
+
+                      if(label.toLowerCase() === "see more"){
+                        catClassName += " link-btn";
+                      }
+
+
+                    return(
+
+                      <Col span={3} key={index} className={catClassName}>
+
+                        {label.toLowerCase() !=="see more"? <p>{label}</p>: <Link to="/menu">{label}</Link>}
+
+                      </Col>
+                      
+                    )
+
+                  })}
+                  
+            </Row>
+
+            <Row className="dishes-container">
+
+                {products.map((product, index)=>{
+
+                  return(
+                    <Col key={index} span={5} className="dishes-content">
+                    
+                      <Dishes data={product} />
+
+                    </Col>
+                  )
+
+                })}
+                  
+            </Row>
+        
+        </Col>
+      
       </Row>
     
     </>

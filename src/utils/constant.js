@@ -162,16 +162,56 @@ export const links = [
       icon: <BsFillCartCheckFill />,
       label: "cat1"
     },
-        {
+    {
       id: 2,
       icon: <MdSupportAgent />,
       label: "cat2"
     },
-        {
+    {
       id: 3,
       icon: <GiKnifeFork  />,
       label: "cat3"
-    }
+    },
+    {
+      id: 4,
+      icon: <GiKnifeFork  />,
+      label: "cat4"
+    },
+    {
+      id: 5,
+      icon: <GiKnifeFork  />,
+      label: "cat5"
+    },
+    {
+      id: 6,
+      icon: <GiKnifeFork  />,
+      label: "cat6"
+    },
+    {
+      id: 7,
+      icon: <GiKnifeFork  />,
+      label: "cat7"
+    },
+    {
+      id: 8,
+      icon: <GiKnifeFork  />,
+      label: "cat8"
+    },
+    {
+      id: 9,
+      icon: <GiKnifeFork  />,
+      label: "cat9"
+    },
+    {
+      id: 10,
+      icon: <GiKnifeFork  />,
+      label: "cat10"
+    },
+    {
+      id: 11,
+      icon: <GiKnifeFork  />,
+      label: "cat11"
+    },
   ]
 
   export const products = [

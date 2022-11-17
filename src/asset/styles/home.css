@@ -275,4 +275,52 @@ button {
   -moz-transition: 0.5s ease all;
   -ms-transition: 0.5s ease all;
   -o-transition: 0.5s ease all;
+}
+
+.menu-pack .pack-title {
+  font-size: 3rem;
+  font-family: righteous;
+  text-align: center;
+}
+.menu-pack .pack-menus {
+  width: 100%;
+  margin-top: 30px;
+}
+.menu-pack .pack-menus .menu-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding: 10px;
+  border: 3px solid #ff006e;
+  justify-content: center;
+  font-family: poppins-semibold;
+}
+.menu-pack .pack-menus .menu-btn p {
+  padding: 0px;
+  margin: 0px;
+}
+.menu-pack .pack-menus .menu-btn a {
+  color: black;
+}
+.menu-pack .pack-menus .link-btn {
+  padding: 0px;
+}
+.menu-pack .pack-menus .link-btn a {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff006e;
+}
+.menu-pack .dishes-container {
+  margin-top: 50px;
+}
+.menu-pack .dishes-container .dishes-content {
+  margin-right: 4.1%;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=home.css.map */

@@ -9,6 +9,11 @@ import { MdSupportAgent } from "react-icons/md"
 import heroImg from "../asset/images/hero.png";
 import team1 from "../asset/images/team1.jpg"
 import team2 from "../asset/images/team2.jpg"
+import Dish1 from "../asset/images/dish_1.png"
+import Dish2 from "../asset/images/dish_2.png"
+import Dish3 from "../asset/images/dish_3.png"
+import Dish4 from "../asset/images/dish_4.png"
+import Dish5 from "../asset/images/dish_5.png"
 
 export const links = [
     {
@@ -104,6 +109,62 @@ export const links = [
       title: "24/7 Services",
       content: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
       icon: <MdSupportAgent />
+    },
+  ]
+
+  export const dishes = [
+    {
+      name: "Dish 1",
+      image: Dish1
+    },
+
+    {
+      name: "Dish 2",
+      image: Dish2
+    },
+
+    {
+      name: "Dish 3",
+      image: Dish3
+    },
+
+    {
+      name: "Dish 4",
+      image: Dish4
+    },
+
+    {
+      name: "Dish 5",
+      image: Dish5
+    },
+
+
+  ]
+
+  export const foodType = [
+    {
+      name: "Dishes",
+      image: ""
+    },
+
+    {
+      name: "Dishes",
+      image: ""
+    },
+
+    {
+      name: "Dishes",
+      image: ""
+    },
+
+    {
+      name: "Dishes",
+      image: ""
+    },
+
+    {
+      name: "Dishes",
+      image: ""
     },
   ]
 

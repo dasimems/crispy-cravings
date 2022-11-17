@@ -44,11 +44,10 @@ function Navbar(props) {
                     }
 
                 return(
-                  <>
 
-                    <li className={linkClassName} key={index}><Link to={url}>{text}</Link></li>
-                  
-                  </>
+                  <li className={linkClassName} key={index}><Link to={url}>{text}</Link></li>
+
+
                 )
               })}
 

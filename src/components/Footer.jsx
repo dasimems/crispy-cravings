@@ -49,11 +49,9 @@ function Footer(props) {
 
                     var {icon, url} = social;
                     return(
-                      <>
 
                         <li key={index}><a href={url} target="_blank" rel="noreferrer" >{icon}</a></li>
-
-                      </>
+                        
                     )
                   })}
 
@@ -70,17 +68,17 @@ function Footer(props) {
 
                     {service.map((service, index)=>{
                       var { title} = service
+
                       return(
-                        <>
                         
-                          <li key={index}>
+                        <li key={index}>
 
-                            {title}
+                          {title}
 
-                          </li>
+                        </li>
 
-                        </>
                       )
+
                     })}
 
                   </ul>
@@ -96,7 +94,6 @@ function Footer(props) {
                     {links.map((contacts, index)=>{
                       var { url, text} = contacts
                       return(
-                        <>
                         
                           <li key={index}>
 
@@ -108,8 +105,6 @@ function Footer(props) {
                             </Link>
 
                           </li>
-
-                        </>
                       )
                     })}
 
@@ -126,7 +121,6 @@ function Footer(props) {
                     {footerContact.map((contacts, index)=>{
                       var {icon, url, text} = contacts
                       return(
-                        <>
                         
                           <li key={index}>
 
@@ -138,8 +132,6 @@ function Footer(props) {
                             </a>
 
                           </li>
-
-                        </>
                       )
                     })}
 

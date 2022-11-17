@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ProductsProvider } from './context/products_context';
 
-import App from './App';
 import 'antd/dist/antd.min.css';
+import App from './App';
 import "./asset/styles/index.css";
 
 

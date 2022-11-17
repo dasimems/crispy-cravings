@@ -13,6 +13,11 @@
     src: url("../fonts/Poppins-Bold.ttf");
 }
 
+@font-face {
+    font-family: righteous;
+    src: url("../fonts/righteous-regular.ttf");
+}
+
 $colors: (
     "primary": #ff006e,
     "default": black,
@@ -23,7 +28,10 @@ $colors: (
 
 $measurement: (
     "headerHeight": 80px,
-    "defaultPadding": 100px
+    "defaultPadding": 100px,
+    "headingFontSize": 1.5rem,
+    "bannerHeadingFontSize": 5rem,
+    "subHeadingFontSize": 1.3rem
 );
 
 @function getColor($value){

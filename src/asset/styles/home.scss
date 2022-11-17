@@ -334,6 +334,7 @@
 
 .review{
     padding: getMeasurement("defaultPadding") 0px;
+    // padding-bottom: 100px;
 
     .review-header-content{
 
@@ -379,4 +380,9 @@
             }
         }
     }
+}
+
+.teams{
+    padding-top: 0px;
+    // border: 1px solid red;
 }

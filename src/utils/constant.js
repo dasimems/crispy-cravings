@@ -157,6 +157,20 @@ export const links = [
       profession: "Chef",
       image: team2
     },
+
+    {
+      id: 3,
+      name: "Duyil Ayomid",
+      profession: "Developer",
+      image: ProfileOne
+    },
+
+    {
+      id: 4,
+      name: "Duyil Ayomid",
+      profession: "Attendant",
+      image: ProfileTwo
+    },
   ]
 
   export const productCategories = [

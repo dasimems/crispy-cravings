@@ -77,9 +77,9 @@ button {
   height: 100%;
 }
 .hero .hero-section .hero-section-container .hero-content h1 {
-  font-size: 5rem;
+  font-size: 4.6rem;
   font-family: righteous;
-  line-height: calc(5rem + 12px);
+  line-height: calc(4.6rem + 12px);
 }
 .hero .hero-section .hero-section-container .hero-content p {
   font-size: 1.1rem;
@@ -147,4 +147,53 @@ button {
 }
 .hero .hero-section .hero-section-container .hero-image img {
   max-width: 524px;
+}
+
+.popular-dishes {
+  width: 100%;
+  height: auto;
+}
+.popular-dishes .popular-dishes-header h2 {
+  font-family: poppins-semibold;
+  font-size: 2rem;
+  font-family: righteous;
+}
+.popular-dishes .popular-dishes-header .slider-nav {
+  display: flex;
+  align-items: center;
+}
+.popular-dishes .popular-dishes-header .slider-nav button {
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  color: #ff006e;
+  border: 3px solid #ff006e;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular-dishes .popular-dishes-header .slider-nav button:not(:first-child) {
+  margin-left: 10px;
+}
+.popular-dishes .popular-dishes-header .slider-nav button:hover {
+  background: #ff006e;
+  color: white;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+}
+.popular-dishes .slider-element {
+  margin-top: 40px;
+}
+.popular-dishes .slider-element .slider-content {
+  width: 90%;
+  height: auto;
 }/*# sourceMappingURL=home.css.map */

@@ -141,33 +141,6 @@ export const links = [
 
   ]
 
-  export const foodType = [
-    {
-      name: "Dishes",
-      image: ""
-    },
-
-    {
-      name: "Dishes",
-      image: ""
-    },
-
-    {
-      name: "Dishes",
-      image: ""
-    },
-
-    {
-      name: "Dishes",
-      image: ""
-    },
-
-    {
-      name: "Dishes",
-      image: ""
-    },
-  ]
-
   export const team = [
     {
       id: 1,

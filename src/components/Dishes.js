@@ -6,7 +6,6 @@ import { useGlobalContext } from '../utils/context'
 const Dishes = ({data}) => {
     const {products, setProducts} = useGlobalContext()
     var {price, image, title} = data;
-
   return (
     <>
 

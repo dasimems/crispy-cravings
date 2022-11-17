@@ -17,6 +17,7 @@ function Home(props) {
 
     var sliderRef;
     const [productCats, setProductCats] = useState([]);
+    const [presentCat, setPresentCat] = useState("");
 
     var settings = {
       dots: false,
@@ -58,6 +59,7 @@ function Home(props) {
 
       if(productCategories.length < 8){
         setProductCats(productCategories)
+        setPresentCat(productCategories[0].label)
       }else{
 
         var newProdCat = []
@@ -74,6 +76,9 @@ function Home(props) {
           label: "See More",
           icon: <FaPlus />
         })
+
+        
+        setPresentCat(newProdCat[0].label)
 
         setProductCats(newProdCat)
 
@@ -268,10 +273,19 @@ function Home(props) {
                         catClassName += " link-btn";
                       }
 
+                      if(presentCat === label){
+                        catClassName += " active-btn"
+
+                      }
+
 
                     return(
 
-                      <Col span={3} key={index} className={catClassName}>
+                      <Col span={3} key={index} className={catClassName} onClick={()=>{
+                        if(label.toLowerCase() !== "see more"){
+                          setPresentCat(label);
+                        }
+                      }}>
 
                         {label.toLowerCase() !=="see more"? <p>{label}</p>: <Link to="/menu">{label}</Link>}
 

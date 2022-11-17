@@ -298,6 +298,8 @@ button {
   border: 3px solid #ff006e;
   justify-content: center;
   font-family: poppins-semibold;
+  cursor: pointer;
+  margin-right: 1.7%;
 }
 .menu-pack .pack-menus .menu-btn p {
   padding: 0px;
@@ -316,6 +318,10 @@ button {
   align-items: center;
   justify-content: center;
   color: #ff006e;
+}
+.menu-pack .pack-menus .active-btn {
+  background: #ff006e;
+  color: white;
 }
 .menu-pack .dishes-container {
   margin-top: 50px;

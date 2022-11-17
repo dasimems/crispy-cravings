@@ -296,6 +296,8 @@
             border: 3px solid getColor("primary");
             justify-content: center;
             font-family: poppins-semibold;
+            cursor: pointer;
+            margin-right: 1.7%;
 
             p{
                 padding: 0px;
@@ -321,6 +323,11 @@
                 justify-content: center;
                 color: getColor("primary");
             }
+        }
+
+        .active-btn{
+            background: getColor("primary");
+            color: getColor("defaultTwo");
         }
     }
     

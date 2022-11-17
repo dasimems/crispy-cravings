@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { makeStars } from '../utils/functions'
+import { useGlobalContext } from '../utils/context'
 
 const Dishes = ({data}) => {
-
+    const {products, setProducts} = useGlobalContext()
     var {price, image, title} = data;
 
   return (
@@ -30,7 +31,6 @@ const Dishes = ({data}) => {
                 })}
 
             </p>
-            <p className='description'>Pasta is a type of food typically made from an unleavened dough</p>
 
             <div className='dish-action align-center'>
             

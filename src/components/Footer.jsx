@@ -31,7 +31,7 @@ function Footer(props) {
 
             <Row justify="space-between" className="footer-content">
 
-              <Col span={6} className="footer-contact">
+              <Col span={6} lg={{span: 6}} md={{span: 10}} xs={{span: 24}} className="footer-contact footer-details">
 
                 <h1>Subscribe to Our Newsletter</h1>
 
@@ -60,7 +60,7 @@ function Footer(props) {
 
               </Col>
 
-              <Col span={4} className="footer-service">
+              <Col span={4} lg={{span: 4}} md={{span: 10}} xs={{span: 24}} className="footer-service footer-details">
 
                   <h2 className="footer-title">Our Services</h2>
 
@@ -85,7 +85,7 @@ function Footer(props) {
 
               </Col>
 
-              <Col span={4} className="footer-links">
+              <Col span={4} lg={{span: 4}} md={{span: 10}} xs={{span: 24}} className="footer-links footer-details">
 
                   <h2 className="footer-title">Quick Links</h2>
 
@@ -112,7 +112,7 @@ function Footer(props) {
 
               </Col>
 
-              <Col span={6} className="footer-about">
+              <Col span={6} lg={{span: 6}} md={{span: 10}} xs={{span: 24}} className="footer-about footer-details">
 
                   <h2 className="footer-title">About Us</h2>
 

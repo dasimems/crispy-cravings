@@ -508,6 +508,9 @@ body footer .footer-container .footer-logo-content .footer-logo {
 body footer .footer-container .footer-content {
   margin-top: 30px;
 }
+body footer .footer-container .footer-details {
+  margin-bottom: 30px;
+}
 body footer .footer-container .footer-contact h1 {
   font-family: poppins-semibold;
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { makeStars } from '../utils/functions'
-import { useGlobalContext } from '../utils/context'
+// import { useGlobalContext } from '../utils/context'
 
 const Dishes = ({data}) => {
-    const {products, setProducts} = useGlobalContext()
+    // const {products, setProducts} = useGlobalContext();
     var {price, image, title} = data;
   return (
     <>

@@ -440,8 +440,76 @@ body{
                     }
                 }
             }
+
+            .mobile-link-btn{
+                display: none;
+
+                .open-mobile-link-btn{
+                    border: 2px solid getColor("primary");
+                    color: getColor("primary");
+                    background: transparent;
+                    width: 50px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    font-size: 1.3rem; 
+                }
+            }
+
+
         }
 
+    }
+
+    .mobile-nav-links{
+
+        .close-mobile-nav{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            font-size: 1.5rem;
+        }
+
+        .mobile-links{
+            width: 100%;
+            margin-top: 80px;
+            list-style: none;
+
+            li{
+
+                a{
+                    width: 100%;
+                    padding: 20px;
+                    display: inline-flex;
+                    padding-left: 50px;
+                    font-weight: bold;
+                    color: getColor("default");
+
+                }
+
+                &:not(:first-child){
+                    margin-top: 20px;
+                }
+
+                &.active-link{
+
+                    a{
+                        background: getColor("primary");
+                        color: getColor("defaultTwo");
+                    }
+                }
+            }
+
+        }
     }
 
     .body-content{
@@ -576,5 +644,23 @@ body{
                 }
             }
         }
+    }
+
+    @media only screen and (max-width: 900px){
+
+        header{
+
+            .header-content{
+                
+                .desktop-links{
+                    display: none;
+                }
+
+                .mobile-link-btn{
+                    display: block;
+                }
+            }
+        }
+
     }
 }

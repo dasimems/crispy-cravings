@@ -417,6 +417,54 @@ body header .header-content .header-links ul li.background-link a:hover {
 body header .header-content .header-links ul li.background-link a:hover::after, body header .header-content .header-links ul li.background-link a::after {
   width: 0%;
 }
+body header .header-content .mobile-link-btn {
+  display: none;
+}
+body header .header-content .mobile-link-btn .open-mobile-link-btn {
+  border: 2px solid #ff006e;
+  color: #ff006e;
+  background: transparent;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 1.3rem;
+}
+body .mobile-nav-links .close-mobile-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+body .mobile-nav-links .mobile-links {
+  width: 100%;
+  margin-top: 80px;
+  list-style: none;
+}
+body .mobile-nav-links .mobile-links li a {
+  width: 100%;
+  padding: 20px;
+  display: inline-flex;
+  padding-left: 50px;
+  font-weight: bold;
+  color: black;
+}
+body .mobile-nav-links .mobile-links li:not(:first-child) {
+  margin-top: 20px;
+}
+body .mobile-nav-links .mobile-links li.active-link a {
+  background: #ff006e;
+  color: white;
+}
 body .body-content {
   width: 100%;
   height: auto;
@@ -519,4 +567,12 @@ body footer .footer-container .footer-contact .social-links li a {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 900px) {
+  body header .header-content .desktop-links {
+    display: none;
+  }
+  body header .header-content .mobile-link-btn {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -5,11 +5,16 @@ import { Link, useLocation } from "react-router-dom";
 import { links } from "../utils/constant";
 
 import logo from "../asset/images/logo.png";
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
+import { FaHamburger } from "react-icons/fa";
+import Modal from "./Modal";
+import { useState } from "react";
+import MobileNav from "./MobileNav";
 
 function Navbar(props) {
 
   const location = useLocation();
+  const [opened, setOpened] = useState(true);
 
   return (
     <>
@@ -23,7 +28,7 @@ function Navbar(props) {
             <img src={logo} alt="crispy logo" />
           </Col>
 
-          <Col pull={1} className="header-links">
+          <Col pull={1} className="header-links desktop-links ">
 
             <ul>
 
@@ -55,9 +60,28 @@ function Navbar(props) {
             
           </Col>
 
+          <Col pull={1} className="mobile-link-btn">
+          
+              <Button className="open-mobile-link-btn" onClick={()=>{
+                setOpened(true);
+              }}>
+              
+                <FaHamburger />
+
+              </Button>
+
+          </Col>
+
         </Row>
 
       </header>
+
+      <Modal opened={opened}>
+          
+        <MobileNav setOpened={setOpened} opened={opened
+        } />
+
+      </Modal>
     
     
     </>

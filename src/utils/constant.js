@@ -43,7 +43,7 @@ export const links = [
     {
       id: 4,
       text: 'Order Now',
-      url: '/',
+      url: '/order',
       bordered: true,
       background: false
     },

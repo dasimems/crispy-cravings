@@ -209,7 +209,7 @@
     .service-content{
         padding-left: 3.2%;
         h1{
-            font-size: 3rem;
+            font-size: clamp(2rem, 5vw, 3rem);
             font-family: righteous;
         }
 
@@ -280,7 +280,7 @@
 .menu-pack{
 
     .pack-title{
-        font-size: 3rem;
+        font-size: clamp(2rem, 5vw, 3rem);
         font-family: righteous;
         text-align: center;
     }
@@ -288,6 +288,19 @@
     .pack-menus{
         width: 100%;
         margin-top: 30px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        scrollbar-height: thin;
+        scrollbar-color: rgba(0, 0, 0, .1);
+
+        &::-webkit-scrollbar{
+            height: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background: rgba(0, 0, 0, .1);
+        }
 
         .menu-btn{
             display: flex;
@@ -303,6 +316,7 @@
             font-family: poppins-semibold;
             cursor: pointer;
             margin-right: 1.7%;
+            min-width: 100px;
 
             p{
                 padding: 0px;
@@ -354,7 +368,8 @@
     .review-header-content{
 
         h1{
-            font-size: 2.4rem;
+            
+            font-size: getMeasurement("subHeadingFontSize");
             font-family: righteous;
 
         }
@@ -458,4 +473,24 @@
         }
 
     }
+
+    .services{
+
+        .service-content{
+
+            h1{
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 830px){
+
+    .services,
+    .review{
+        padding: 70px 0px;
+    }
+
 }

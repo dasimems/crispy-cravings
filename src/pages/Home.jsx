@@ -336,7 +336,7 @@ function Home(props) {
         
             <h2 className="pack-title">Our Regular Menu Pack</h2>
 
-            <Row justify="center" className="pack-menus">
+            <Row justify="space-between" className="pack-menus">
 
                   {productCats.map((cat, index)=>{
 

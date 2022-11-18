@@ -158,7 +158,7 @@ button {
 }
 .popular-dishes .popular-dishes-header h2 {
   font-family: poppins-semibold;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2vw, 2rem);
   font-family: righteous;
 }
 .popular-dishes .popular-dishes-header .slider-nav {
@@ -222,7 +222,7 @@ button {
   padding-left: 3.2%;
 }
 .services .service-content h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-family: righteous;
 }
 .services .service-content .service-description {
@@ -282,13 +282,24 @@ button {
 }
 
 .menu-pack .pack-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-family: righteous;
   text-align: center;
 }
 .menu-pack .pack-menus {
   width: 100%;
   margin-top: 30px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-height: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1);
+}
+.menu-pack .pack-menus::-webkit-scrollbar {
+  height: 2px;
+}
+.menu-pack .pack-menus::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
 }
 .menu-pack .pack-menus .menu-btn {
   display: flex;
@@ -304,6 +315,7 @@ button {
   font-family: poppins-semibold;
   cursor: pointer;
   margin-right: 1.7%;
+  min-width: 100px;
 }
 .menu-pack .pack-menus .menu-btn p {
   padding: 0px;
@@ -339,7 +351,7 @@ button {
   padding: 150px 0px;
 }
 .review .review-header-content h1 {
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 2vw, 2rem);
   font-family: righteous;
 }
 .review .review-header-content .review-nav {
@@ -415,5 +427,14 @@ button {
   }
   .hero .hero-section .hero-section-container .hero-image {
     margin-top: 40px;
+  }
+  .services .service-content h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .services,
+.review {
+    padding: 70px 0px;
   }
 }/*# sourceMappingURL=home.css.map */

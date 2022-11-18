@@ -167,6 +167,17 @@
         }
     }
 
+    .slider-element{
+
+        .slider-content{
+
+            @media only screen and (max-width: 575px){
+                width: 100%;
+        
+            }
+        }
+    }
+
 }
 
 .services{
@@ -384,11 +395,41 @@
             }
         }
     }
+
+    .slider-element{
+        margin-top: 40px;
+
+        .slider-content{
+            width: 90%;
+            height: auto;
+            // border: 1px solid red;
+
+            @media only screen and (max-width: 600px){
+                width: 100%;
+        
+            }
+        }
+    }
 }
 
 .teams{
     padding-top: 0px;
     // border: 1px solid red;
+
+    .slider-element{
+        margin-top: 40px;
+
+        .slider-content{
+            width: 90%;
+            height: auto;
+            // border: 1px solid red;
+
+            @media only screen and (max-width: 575px){
+                width: 100%;
+        
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 991px){

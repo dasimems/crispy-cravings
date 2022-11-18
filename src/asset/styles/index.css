@@ -68,6 +68,7 @@ body {
   min-height: 100%;
   background: #fcf3f7;
   font-family: poppins;
+  min-width: 320px;
 }
 body .slider-element {
   margin-top: 40px;

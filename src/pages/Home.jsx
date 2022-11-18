@@ -48,6 +48,42 @@ function Home(props) {
           }
         },
         {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
+
+    var teamSettings = {
+      dots: false,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      initialSlide: 0,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 943,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
@@ -444,7 +480,7 @@ function Home(props) {
           
           </Row>
 
-          <Slider ref={c => chefRef = c} {...settings} className="slider-element">
+          <Slider ref={c => chefRef = c} {...teamSettings} className="slider-element">
 
               {team.map((teamData, index)=>{
                 return(

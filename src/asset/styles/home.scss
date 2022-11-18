@@ -4,6 +4,7 @@
 .hero{
     width: 100%;
     height: calc(100vh - getMeasurement("headerHeight"));
+    padding: 20px 0px;
 
     .hero-section{
         height: 100%;
@@ -22,9 +23,11 @@
                     font-family: righteous;
                     // font-weight: bold;
                     line-height: calc(getMeasurement("bannerHeadingFontSize") + 12px);
+                    width: 97%;
                 }
 
                 p{
+                    width: 95%;
                     font-size: 1.1rem;
                     color: rgba(0, 0, 0, .9);
                     margin-top: 30px;
@@ -385,4 +388,32 @@
 .teams{
     padding-top: 0px;
     // border: 1px solid red;
+}
+
+@media only screen and (max-width: 991px){
+    .hero{
+        height: auto;
+        max-height: unset;
+        text-align: center;
+        padding-bottom: 100px;
+
+        .hero-section{
+
+            .hero-section-container{
+
+                .hero-content{
+
+                    .hero-actions{
+                        justify-content: center;
+                    }
+                }
+
+                .hero-image{
+                    margin-top: 40px;
+                }
+
+            }
+        }
+
+    }
 }

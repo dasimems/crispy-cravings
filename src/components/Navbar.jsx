@@ -14,7 +14,7 @@ import MobileNav from "./MobileNav";
 function Navbar(props) {
 
   const location = useLocation();
-  const [opened, setOpened] = useState(true);
+  const [opened, setOpened] = useState(false);
 
   return (
     <>

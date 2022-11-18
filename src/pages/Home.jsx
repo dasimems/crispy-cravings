@@ -40,7 +40,7 @@ function Home(props) {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 943,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -48,7 +48,7 @@ function Home(props) {
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 600,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -131,9 +131,9 @@ function Home(props) {
       
         <Col span={22} className="hero-section">
 
-          <Row justify="space-between" className="hero-section-container align-center">
+          <Row justify="center" className="hero-section-container align-center">
 
-            <Col span={11} className="hero-content">
+            <Col span={12} lg={{span: 12}} md={{span: 14}} xs={{span: 24}}className="hero-content">
 
               <h1>We Serve The Taste You Love</h1>
 
@@ -158,7 +158,7 @@ function Home(props) {
 
             </Col>
 
-            <Col span={11} className="hero-image">
+            <Col span={12} lg={{span: 12}} md={{span: 16}} xs={{span: 24}}className="hero-image">
 
               <ImageAnimation>
                 {dishes.map((imageDetails, index) => {
@@ -340,7 +340,7 @@ function Home(props) {
                 {products.map((product, index)=>{
 
                   return(
-                    <Col key={index} span={5} className="dishes-content">
+                    <Col key={index} span={5} lg={{span: 5}} md={{span: 11}} sm={{span: 11}} xs={{span: 24}} className="dishes-content">
                     
                       <Dishes data={product} />
 

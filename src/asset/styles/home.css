@@ -67,6 +67,7 @@ button {
 .hero {
   width: 100%;
   height: calc(100vh - 80px);
+  padding: 20px 0px;
 }
 .hero .hero-section {
   height: 100%;
@@ -77,11 +78,13 @@ button {
   height: 100%;
 }
 .hero .hero-section .hero-section-container .hero-content h1 {
-  font-size: 4.6rem;
+  font-size: clamp(2.5rem, 10vw, 4.6rem);
   font-family: righteous;
-  line-height: calc(4.6rem + 12px);
+  line-height: calc(clamp(2.5rem, 10vw, 4.6rem) + 12px);
+  width: 97%;
 }
 .hero .hero-section .hero-section-container .hero-content p {
+  width: 95%;
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.9);
   margin-top: 30px;
@@ -366,4 +369,19 @@ button {
 
 .teams {
   padding-top: 0px;
+}
+
+@media only screen and (max-width: 991px) {
+  .hero {
+    height: auto;
+    max-height: unset;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  .hero .hero-section .hero-section-container .hero-content .hero-actions {
+    justify-content: center;
+  }
+  .hero .hero-section .hero-section-container .hero-image {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=home.css.map */

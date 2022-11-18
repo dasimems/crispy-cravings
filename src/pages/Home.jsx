@@ -241,16 +241,16 @@ function Home(props) {
       
             <Col span={22}>
             
-                  <Row justify="space-between">
+                  <Row justify="center">
                   
-                    <Col span={11} className="service-image">
+                    <Col span={12} lg={{span: 12, order: 1}} md={{span: 18, order: 2}} xs={{span: 24, order: 2}} className="service-image">
                     
                         <img src={VegetableOne} className="side-image top" alt="vegetable" />
                         <img src={ServiceImage} alt="chef with food" />
                         <img src={VegetableTwo} className="side-image bottom" alt="vegetable" />
 
                     </Col>
-                    <Col span={11} className="service-content">
+                    <Col span={12} lg={{span: 12, order: 2}} md={{span: 24, order: 1}} xs={{span: 24, order: 1}} className="service-content">
                     
                       <h1>We are more than multiple service</h1>
 
@@ -265,7 +265,7 @@ function Home(props) {
                             var {icon, title} = serviceContent;
 
                             return(
-                              <Col key={index} span={11} className="service-card">
+                              <Col key={index} span={11} lg={{span: 11}} md={{span: 11}} sm={{span: 11}} xs={{span: 24}} className="service-card">
                               
                                 <div className="service-card-image">
                                 

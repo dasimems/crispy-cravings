@@ -213,6 +213,9 @@ button {
   bottom: 0px;
   left: 0px;
 }
+.services .service-content {
+  padding-left: 3.2%;
+}
 .services .service-content h1 {
   font-size: 3rem;
   font-family: righteous;

@@ -1,0 +1,186 @@
+@import "./style";
+@import "./variables";
+
+
+.services{
+    width: 100%;
+    padding: getMeasurement("defaultPadding") 0px;
+
+    .service-image{
+        position: relative;
+        // border: 1px solid red;
+        
+        .side-image{
+            position: absolute;
+            max-width: 150px;
+        }
+
+        .top{
+            top: 0px;
+            right: 0px;
+
+        }
+
+        .bottom{
+            bottom: 0px;
+            left: 0px;
+
+        }
+    }
+
+    .service-content{
+        padding-left: 3.2%;
+        h1{
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-family: righteous;
+        }
+
+        .service-description{
+            font-size: 1.35rem;
+            color: rgba(0, 0, 0, .7);
+        }
+
+        .service-card-container{
+            width: 100%;
+            margin-top: 50px;
+
+            .service-card{
+                display: flex;
+                margin-bottom: 40px;
+                align-items: center;
+
+                .service-card-image{
+                    width: 50px;
+                    height: 50px;
+                    border: dashed 2px rgba(0, 0, 0, .2);
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    font-size: 2rem;
+                    color: getColor("secondary");
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .service-card-title{
+                    margin: 0px;
+                    margin-left: 20px;
+                    font-size: 1.35rem;
+                    font-family: righteous;
+                    color: rgba(0, 0, 0, .75);
+                }
+            }
+        }
+
+        .button{
+            margin-top: 20px;
+            background: getColor("primary");
+            color: getColor("defaultTwo");
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            border: 3px solid getColor("primary");
+
+            &:hover{
+                background: transparent;
+                color: getColor("primary");
+                transition: 0.5s ease all;
+                -webkit-transition: 0.5s ease all;
+                -moz-transition: 0.5s ease all;
+                -ms-transition: 0.5s ease all;
+                -o-transition: 0.5s ease all;
+            }
+        }
+    }
+}
+
+.review{
+    padding: getMeasurement("defaultPadding") 0px;
+    // padding-bottom: 100px;
+
+    .review-header-content{
+
+        h1{
+            
+            font-size: getMeasurement("subHeadingFontSize");
+            font-family: righteous;
+
+        }
+
+        .review-nav{
+            display: flex;
+            align-items: center;
+
+            button{
+                padding: 0px;
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                color: getColor("primary");
+                border: 3px solid getColor("primary");
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:not(:first-child){
+                    margin-left: 10px;
+                }
+
+                &:hover{
+                    background: getColor("primary");
+                    color: getColor("defaultTwo");
+                    transition: 0.5s ease all;
+                    -webkit-transition: 0.5s ease all;
+                    -moz-transition: 0.5s ease all;
+                    -ms-transition: 0.5s ease all;
+                    -o-transition: 0.5s ease all;
+                }
+            }
+        }
+    }
+
+    .slider-element{
+        margin-top: 40px;
+
+        .slider-content{
+            width: 90%;
+            height: auto;
+            // border: 1px solid red;
+
+            @media only screen and (max-width: 600px){
+                width: 100%;
+        
+            }
+        }
+    }
+}
+
+.teams{
+    padding-top: 0px;
+    // border: 1px solid red;
+
+    .slider-element{
+        margin-top: 40px;
+
+        .slider-content{
+            width: 90%;
+            height: auto;
+            // border: 1px solid red;
+
+            @media only screen and (max-width: 575px){
+                width: 100%;
+        
+            }
+        }
+    }
+}

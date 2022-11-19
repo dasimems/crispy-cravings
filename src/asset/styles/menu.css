@@ -1,0 +1,139 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  padding: 13px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: inline-flex;
+  height: auto;
+  width: auto;
+}
+
+.button {
+  cursor: pointer;
+  padding: 13px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: inline-flex;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: poppins-semibold;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: righteous;
+  src: url("../fonts/righteous-regular.ttf");
+}
+.bread-crumb-container {
+  margin-top: 40px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.menu-pack .pack-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-family: righteous;
+  text-align: left;
+}
+.menu-pack .pack-menus {
+  width: 100%;
+  margin-top: 30px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-height: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1);
+  padding: 15px 0px;
+}
+.menu-pack .pack-menus::-webkit-scrollbar {
+  height: 5px;
+}
+.menu-pack .pack-menus::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+.menu-pack .pack-menus .menu-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding: 10px;
+  border: 3px solid #ff006e;
+  justify-content: center;
+  font-family: poppins-semibold;
+  cursor: pointer;
+  margin-right: 1.7%;
+  min-width: 100px;
+}
+.menu-pack .pack-menus .menu-btn p {
+  padding: 0px;
+  margin: 0px;
+}
+.menu-pack .pack-menus .menu-btn a {
+  color: black;
+}
+.menu-pack .pack-menus .link-btn {
+  padding: 0px;
+}
+.menu-pack .pack-menus .link-btn a {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff006e;
+}
+.menu-pack .pack-menus .active-btn {
+  background: #ff006e;
+  color: white;
+}
+.menu-pack .dishes-container {
+  margin-top: 50px;
+}
+.menu-pack .dishes-container .dishes-content {
+  margin-right: 4.1%;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,94 @@
+@import "./style";
+@import "./variables";
+
+.bread-crumb-container{
+    margin-top: 40px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.menu-pack{
+
+    .pack-title{
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-family: righteous;
+        text-align: left;
+    }
+
+    .pack-menus{
+        width: 100%;
+        margin-top: 30px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        scrollbar-height: thin;
+        scrollbar-color: rgba(0, 0, 0, .1);
+        padding: 15px 0px;
+
+        &::-webkit-scrollbar{
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background: rgba(0, 0, 0, .3);
+        }
+
+        .menu-btn{
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            padding: 10px;
+            border: 3px solid getColor("primary");
+            justify-content: center;
+            font-family: poppins-semibold;
+            cursor: pointer;
+            margin-right: 1.7%;
+            min-width: 100px;
+
+            p{
+                padding: 0px;
+                margin: 0px;
+            }
+
+            a{
+                color: black;
+
+            }
+        }
+
+        .link-btn{
+            padding: 0px;
+            // background: getColor("primary");
+            
+
+            a{
+                width: 100%;
+                height: 100%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: getColor("primary");
+            }
+        }
+
+        .active-btn{
+            background: getColor("primary");
+            color: getColor("defaultTwo");
+        }
+    }
+    
+    .dishes-container{
+        margin-top: 50px;
+
+        .dishes-content{
+            margin-right: 4.1%;
+            margin-bottom: 30px;
+        }
+    }
+
+}

@@ -346,6 +346,25 @@ button {
   margin-right: 4.1%;
   margin-bottom: 30px;
 }
+.menu-pack .menu-action .button {
+  background: #ff006e;
+  color: white;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: 3px solid #ff006e;
+}
+.menu-pack .menu-action .button:hover {
+  background: transparent;
+  color: #ff006e;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+}
 
 .review {
   padding: 150px 0px;

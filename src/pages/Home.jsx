@@ -373,7 +373,7 @@ function Home(props) {
 
             <Row className="dishes-container">
 
-                {products.slice(0, 12).map((product, index)=>{
+                {products.slice(0, 8).map((product, index)=>{
 
                   return(
                     <Col key={index} span={5} lg={{span: 5}} md={{span: 11}} sm={{span: 11}} xs={{span: 24}} className="dishes-content">
@@ -387,7 +387,7 @@ function Home(props) {
                   
             </Row>
 
-            {products.length > 12 && <Row justify="end" className="menu-action">
+            {products.length > 8 && <Row justify="end" className="menu-action">
                 <Link className="button" to="/menu">See More</Link>
             </Row>}
         

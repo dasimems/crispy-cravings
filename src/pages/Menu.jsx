@@ -1,22 +1,19 @@
 import { Col, Row, Breadcrumb } from "antd"
-import React, {useEffect, useState} from "react"
+import React, { useState} from "react"
 import { Link } from "react-router-dom";
 import { Dishes } from "../components";
 import { productCategories, products } from "../utils/constant";
 // import { products } from "../utils/constant"
 
 import "../asset/styles/menu.css"
+import { BsFillCartCheckFill } from "react-icons/bs";
 
 const Menu = () => {
 
   
-    const [presentCat, setPresentCat] = useState("");
+    const [presentCat, setPresentCat] = useState("all");
 
-  useEffect(()=>{
-
-      setPresentCat(productCategories[0].label);
-
-    }, [])
+  
 
   return (
     <>
@@ -39,7 +36,7 @@ const Menu = () => {
 
             <Row justify="space-between" className="pack-menus">
 
-                  {productCategories.map((cat, index)=>{
+                  {[{label: "All", icon: <BsFillCartCheckFill />}, ...productCategories].map((cat, index)=>{
 
                     var {label} = cat,
                       catClassName = "menu-btn";
@@ -48,7 +45,7 @@ const Menu = () => {
                         catClassName += " link-btn";
                       }
 
-                      if(presentCat === label){
+                      if(presentCat.toLowerCase() === label.toLowerCase()){
                         catClassName += " active-btn"
 
                       }

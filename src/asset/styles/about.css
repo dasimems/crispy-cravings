@@ -64,9 +64,17 @@ button {
   font-family: righteous;
   src: url("../fonts/righteous-regular.ttf");
 }
+.bread-crumb-container {
+  margin-top: 40px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 .services {
   width: 100%;
   padding: 150px 0px;
+  padding-top: 10px !important;
 }
 .services .service-image {
   position: relative;
@@ -148,6 +156,7 @@ button {
 
 .review {
   padding: 150px 0px;
+  padding-top: 0px !important;
 }
 .review .review-header-content h1 {
   font-size: clamp(1.6rem, 2vw, 2rem);

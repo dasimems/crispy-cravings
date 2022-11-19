@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 // import { FaBars } from "react-icons/fa";
 
 import { links } from "../utils/constant";
@@ -10,11 +10,20 @@ import { FaHamburger } from "react-icons/fa";
 import Modal from "./Modal";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
+import { useEffect } from "react";
 
 function Navbar(props) {
 
   const location = useLocation();
   const [opened, setOpened] = useState(false);
+
+  const navigate = useNavigate()
+
+  useEffect(()=>{
+
+    setOpened(false)
+
+  }, [navigate])
 
   return (
     <>

@@ -100,7 +100,7 @@ const About = () => {
         </Col>
       </Row>
 
-        <Row justify="center" className="services">
+        <Row justify="center" className="services about-service">
       
             <Col span={22}>
             
@@ -155,7 +155,7 @@ const About = () => {
 
       </Row>
 
-      <Row justify="center" className="review teams">
+      <Row justify="center" className="review teams about-review">
 
         <Col span={22}>
 
@@ -213,7 +213,7 @@ const About = () => {
       
       </Row>
 
-      <Row justify="center" className="review">
+      <Row justify="center" className="review about-review">
 
         <Col span={22}>
 

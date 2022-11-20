@@ -3,7 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight, FaPlus, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { dishes, productCategories, review, service, team } from "../utils/constant"
+import { dishes, review, service, team } from "../utils/constant"
 
 import "../asset/styles/home.css"
 import { CustomerReview, Dishes, ImageAnimation, TeamCard } from "../components";
@@ -21,9 +21,10 @@ function Home(props) {
     var reviewRef;
     const [productCats, setProductCats] = useState([]);
     const [presentCat, setPresentCat] = useState("");
+    const [fetchedProduct, setFetchedProduct] = useState([])
 
     
-    const {products} = useGlobalContext()
+    const {products, productCategories} = useGlobalContext()
 
     var settings = {
       dots: false,
@@ -137,7 +138,7 @@ function Home(props) {
 
       if(productCategories.length < 8){
         setProductCats(productCategories)
-        setPresentCat(productCategories[0].label)
+        setPresentCat(productCategories[0]?.label)
       }else{
 
         var newProdCat = []
@@ -162,7 +163,15 @@ function Home(props) {
 
       }
 
-    }, [])
+    }, [productCategories])
+
+    useEffect(()=>{
+
+      var productList = products.filter(prod => prod.category.name === presentCat);
+
+      setFetchedProduct(productList)
+
+    }, [products, presentCat])
 
   return (
     <>
@@ -377,7 +386,7 @@ function Home(props) {
 
             <Row className="dishes-container">
 
-                {products.slice(0, 8).map((product, index)=>{
+                {fetchedProduct.slice(0, 8).map((product, index)=>{
 
                   return(
                     <Col key={index} span={5} lg={{span: 5}} md={{span: 11}} sm={{span: 11}} xs={{span: 24}} className="dishes-content">

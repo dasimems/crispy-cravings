@@ -11,7 +11,7 @@
 .services{
     width: 100%;
     padding: getMeasurement("defaultPadding") 0px;
-    padding-top: 10px !important;
+    // padding-top: 10px !important;
 
     .service-image{
         position: relative;
@@ -106,10 +106,14 @@
     }
 }
 
+.about-service{
+    margin-top: 20px !important;
+}
+
 .review{
     padding: getMeasurement("defaultPadding") 0px;
     // padding-bottom: 100px;
-    padding-top: 0px !important;
+    // padding-top: 0px !important;
 
     .review-header-content{
 
@@ -171,6 +175,11 @@
             }
         }
     }
+}
+
+.about-review{
+    padding-top: 0px !important;
+
 }
 
 .teams{

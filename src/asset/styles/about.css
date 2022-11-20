@@ -74,7 +74,6 @@ button {
 .services {
   width: 100%;
   padding: 150px 0px;
-  padding-top: 10px !important;
 }
 .services .service-image {
   position: relative;
@@ -154,9 +153,12 @@ button {
   -o-transition: 0.5s ease all;
 }
 
+.about-service {
+  margin-top: 20px !important;
+}
+
 .review {
   padding: 150px 0px;
-  padding-top: 0px !important;
 }
 .review .review-header-content h1 {
   font-size: clamp(1.6rem, 2vw, 2rem);
@@ -205,6 +207,10 @@ button {
   .review .slider-element .slider-content {
     width: 100%;
   }
+}
+
+.about-review {
+  padding-top: 0px !important;
 }
 
 .teams {

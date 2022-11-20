@@ -60,20 +60,20 @@ export const links = [
   ]
 
   export const socials = [
-    {
-      id: 1,
-      icon: <AiOutlineTwitter />,
-      url: '/'
-    },
-    {
-      id: 2,
-      icon: <AiFillFacebook />,
-      url: "/"
-    },
+    // {
+    //   id: 1,
+    //   icon: <AiOutlineTwitter />,
+    //   url: '/'
+    // },
+    // {
+    //   id: 2,
+    //   icon: <AiFillFacebook />,
+    //   url: "/"
+    // },
     {
       id: 3,
       icon: <AiOutlineInstagram />,
-      url: '/'
+      url: 'https://instagram.com/cripsycravings?igshid=YmMyMTA2M2Y='
     }
   ]
 
@@ -82,13 +82,13 @@ export const links = [
       id: 1,
       icon: <ImLocation2 />,
       url: "/",
-      text: "203 Fake St. Mountain View, San Francisco, California, USA"
+      text: "No. 112/KM2 Iwofe Road, Opp. Enyo Filling Station Port Harcourt, Rivers State,"
     },
     {
       id: 2,
       icon: <ImPhone />,
       url: "/",
-      text: "+234819238441"
+      text: "0906 799 6770"
     },
     {
       id: 3,
@@ -164,316 +164,12 @@ export const links = [
     },
     {
       id: 2,
-      name: "Kosiso Ekwem",
-      profession: "Chef",
+      name: "Stephen Chibuike",
+      profession: "Chef / Co-founder",
       image: team2
     },
   ]
 
-  export const productCategories = [
-    {
-      id: 1,
-      icon: <BsFillCartCheckFill />,
-      label: "cat1"
-    },
-    {
-      id: 2,
-      icon: <MdSupportAgent />,
-      label: "cat2"
-    },
-    {
-      id: 3,
-      icon: <GiKnifeFork  />,
-      label: "cat3"
-    },
-    {
-      id: 4,
-      icon: <GiKnifeFork  />,
-      label: "cat4"
-    },
-    {
-      id: 5,
-      icon: <GiKnifeFork  />,
-      label: "cat5"
-    },
-    {
-      id: 6,
-      icon: <GiKnifeFork  />,
-      label: "cat6"
-    },
-    {
-      id: 7,
-      icon: <GiKnifeFork  />,
-      label: "cat7"
-    },
-    {
-      id: 8,
-      icon: <GiKnifeFork  />,
-      label: "cat8"
-    },
-    {
-      id: 9,
-      icon: <GiKnifeFork  />,
-      label: "cat9"
-    },
-    {
-      id: 10,
-      icon: <GiKnifeFork  />,
-      label: "cat10"
-    },
-    {
-      id: 11,
-      icon: <GiKnifeFork  />,
-      label: "cat11"
-    },
-  ]
-
-  export const products = [
-    {
-      id: 1,
-      category: 1,
-      price: "40",
-      quantity: 5,
-      title: "pizza",
-      image: heroImg
-    },
-    {
-      id: 2,
-      category: 2,
-      price: "34",
-      quantity: 7,
-      title: "pizza hit",
-      image: team2
-    },
-    {
-      id: 3,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 4,
-      category: 1,
-      price: "40",
-      quantity: 5,
-      title: "pizza",
-      image: heroImg
-    },
-    {
-      id: 5,
-      category: 2,
-      price: "34",
-      quantity: 7,
-      title: "pizza hit",
-      image: team2
-    },
-    {
-      id: 6,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 7,
-      category: 1,
-      price: "40",
-      quantity: 5,
-      title: "pizza",
-      image: heroImg
-    },
-    {
-      id: 8,
-      category: 2,
-      price: "34",
-      quantity: 7,
-      title: "pizza hit",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 10,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 11,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 12,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: Dish1
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: ProfileOne
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    {
-      id: 9,
-      category: 3,
-      price: "56",
-      quantity: 7,
-      title: "pizza cool",
-      image: team2
-    },
-    
-
-    
-  ]
 
   export const review = [
     {
@@ -506,5 +202,3 @@ export const links = [
       review: "This place is great! The atmosphere is cool and the staff is really friendly. They really do offer a great service and it can be foretold from the customers expression that they are all happy."
     }
   ]
-
-  export const products_url = 'https://course-api.com/react-store-products'

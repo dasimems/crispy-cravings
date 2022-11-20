@@ -454,6 +454,13 @@
     padding-top: 0px;
     // border: 1px solid red;
 
+    .review-header-content{
+
+        .team-header{
+            text-align: center;
+        }
+    }
+
     .slider-element{
         margin-top: 40px;
 
@@ -467,6 +474,15 @@
         
             }
         }
+    }
+
+    .team-container{
+
+        .team-card-content{
+            margin-right: 4.2%;
+        }
+
+
     }
 }
 

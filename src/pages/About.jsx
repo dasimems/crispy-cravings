@@ -13,44 +13,8 @@ import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 
 const About = () => {
-    var chefRef;
     var reviewRef;
 
-    var teamSettings = {
-      dots: false,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      initialSlide: 0,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 943,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    };
 
     
     var reviewSettings = {
@@ -161,49 +125,19 @@ const About = () => {
 
           <Row justify="space-between" className="review-header-content">
           
-            <h1 className="review-header">Meet Our Chefs</h1>
-
-            <div className="review-nav">
-            
-                
-              <Button className="prev-button" onClick={()=>{
-                chefRef.slickPrev();
-              }}>
-              
-                <FaArrowLeft />
-
-              </Button>
-
-              <Button className="next-button" onClick={()=>{
-                chefRef.slickNext();
-              }}>
-              
-                <FaArrowRight />
-
-              </Button>
-            
-            </div>
+            <h1 className="team-header">Meet Our Chefs</h1>
           
           </Row>
 
-          <Slider ref={c => chefRef = c} {...teamSettings} className="slider-element">
-
-              {team.map((teamData, index)=>{
-                return(
-                  
-                  <div key={index}>
-                    <div className="slider-content">
-
-                      <TeamCard data={teamData} />
-
-                    </div>
-                  </div>
-                )
-              })}
-  
-
-
-          </Slider>
+          <Row className="team-container">
+            {team.map((teamDetails, index)=>{
+              return(
+                <Col span={7} lg={{span: 7}} md={{span: 13}} sm={{span: 17}} xs={{span: 24}} key={index} className="team-card-content">
+                  <TeamCard data={teamDetails} />
+                </Col>
+              )
+            })}
+          </Row>
         
         </Col>
 

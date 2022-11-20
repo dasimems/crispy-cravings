@@ -11,19 +11,42 @@ import Modal from "./Modal";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
 import { useEffect } from "react";
+import { Player } from "@lottiefiles/react-lottie-player";
+import Loader from "../asset/images/loader.json"
+import SomethingWentWrong from "../asset/images/something_went_wrong.json"
+import { useGlobalContext } from "../utils/context";
 
 function Navbar(props) {
 
   const location = useLocation();
   const [opened, setOpened] = useState(false);
+  const [loading, setLoading] = useState(true)
 
   const navigate = useNavigate()
+  const {productLoaded} = useGlobalContext();
 
   useEffect(()=>{
 
     setOpened(false)
 
+    window.scrollTo({
+      top:0,
+      left: 0
+    })
+
   }, [navigate])
+
+  useEffect(()=>{
+
+    setTimeout(()=>{
+
+      if(productLoaded.loaded && productLoaded.message === "success"){
+        setLoading(false)
+      }
+    }, 1000)
+
+
+  }, [productLoaded])
 
   return (
     <>
@@ -89,6 +112,35 @@ function Navbar(props) {
           
         <MobileNav setOpened={setOpened} opened={opened
         } />
+
+      </Modal>
+
+      <Modal opened={loading}>
+
+        <div className="loader" style={{background: "white"}}>
+
+          
+          {productLoaded.message === "failed"? (
+            
+          <Player
+            autoplay
+            loop
+            src={SomethingWentWrong}
+            className="error-animation"
+
+
+          />
+          ): (
+            <Player
+            autoplay
+            loop
+            src={Loader}
+            className="loading-animation"
+
+          />
+          )}
+
+        </div>
 
       </Modal>
     

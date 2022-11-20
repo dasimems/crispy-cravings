@@ -216,6 +216,9 @@ button {
 .teams {
   padding-top: 0px;
 }
+.teams .review-header-content .team-header {
+  text-align: center;
+}
 .teams .slider-element {
   margin-top: 40px;
 }
@@ -227,4 +230,7 @@ button {
   .teams .slider-element .slider-content {
     width: 100%;
   }
+}
+.teams .team-container .team-card-content {
+  margin-right: 4.2%;
 }/*# sourceMappingURL=about.css.map */

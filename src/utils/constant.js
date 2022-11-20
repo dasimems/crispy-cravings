@@ -21,7 +21,7 @@ import ProfileThree from "../asset/images/profile_image_2.jpg"
 
 
 export const siteDetails = {
-  whatsappNumber: "+2349031987924"
+  whatsappNumber: "+2349067996770"
 }
 
 export const links = [

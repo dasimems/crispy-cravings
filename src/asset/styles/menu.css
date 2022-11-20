@@ -136,4 +136,40 @@ button {
 .menu-pack .dishes-container .dishes-content {
   margin-right: 4.1%;
   margin-bottom: 30px;
+}
+.menu-pack .menu-nav-buttons {
+  width: 100%;
+}
+.menu-pack .menu-nav-buttons .product-nav-btn {
+  background: transparent;
+  border: 3px solid #ff006e;
+  color: white;
+  padding: 8px 25px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  color: #ff006e;
+}
+.menu-pack .menu-nav-buttons .product-nav-btn:not(:first-child) {
+  margin-left: 10px;
+}
+.menu-pack .menu-nav-buttons .product-nav-btn:hover {
+  background: #ff006e;
+  color: white;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+}
+.menu-pack .menu-nav-buttons .next-prev-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-pack .menu-nav-buttons .active-btn {
+  background: #ff006e;
+  color: white;
 }/*# sourceMappingURL=menu.css.map */

@@ -182,6 +182,7 @@ body .dish-card .dish-image {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  overflow: hidden;
 }
 body .dish-card .dish-image img {
   width: 100%;

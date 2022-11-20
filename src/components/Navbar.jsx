@@ -42,7 +42,7 @@ function Navbar(props) {
             <ul>
 
               {links.map((link, index) => {
-                var {text, url, bordered, background} = link,
+                var {text, url, bordered, background, normalLink} = link,
                     linkClassName = "";
 
                     if(location.pathname === url){
@@ -59,7 +59,7 @@ function Navbar(props) {
 
                 return(
 
-                  <li className={linkClassName} key={index}><Link to={url}>{text}</Link></li>
+                  <li className={linkClassName} key={index}>{normalLink? <a href={url} target="_blank" rel="noreferrer">{text}</a> :<Link to={url}>{text}</Link>}</li>
 
 
                 )

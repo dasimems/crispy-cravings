@@ -18,34 +18,44 @@ import ProfileOne from "../asset/images/profile_image.jpg"
 import ProfileTwo from "../asset/images/profile_image_1.jpg"
 import ProfileThree from "../asset/images/profile_image_2.jpg"
 
+
+
+export const siteDetails = {
+  whatsappNumber: "+2349036634645"
+}
+
 export const links = [
     {
       id: 1,
       text: 'Home',
       url: '/',
       bordered: false,
-      background: false
+      background: false,
+      normalLink: false
     },
     {
       id: 2,
       text: 'About Us',
       url: '/about',
       bordered: false,
-      background: false
+      background: false,
+      normalLink: false
     },
     {
       id: 3,
       text: 'Menu',
       url: '/menu',
       bordered: false,
-      background: false
+      background: false,
+      normalLink: false
     },
     {
       id: 4,
       text: 'Order Now',
-      url: '/order',
+      url: `https://api.whatsapp.com/send?phone=${siteDetails.whatsappNumber}`,
       bordered: true,
-      background: false
+      background: false,
+      normalLink: true
     },
   ]
 
@@ -78,7 +88,7 @@ export const links = [
       id: 2,
       icon: <ImPhone />,
       url: "/",
-      text: "+234 819238441"
+      text: "+234819238441"
     },
     {
       id: 3,
@@ -87,6 +97,7 @@ export const links = [
       text: "info@crispycravingscafe.com"
     }
   ]
+
 
   export const service = [
     {
@@ -305,7 +316,7 @@ export const links = [
       image: team2
     },
     {
-      id: 9,
+      id: 10,
       category: 3,
       price: "56",
       quantity: 7,
@@ -313,7 +324,7 @@ export const links = [
       image: team2
     },
     {
-      id: 9,
+      id: 11,
       category: 3,
       price: "56",
       quantity: 7,
@@ -321,12 +332,12 @@ export const links = [
       image: team2
     },
     {
-      id: 9,
+      id: 12,
       category: 3,
       price: "56",
       quantity: 7,
       title: "pizza cool",
-      image: team2
+      image: Dish1
     },
     {
       id: 9,
@@ -334,7 +345,7 @@ export const links = [
       price: "56",
       quantity: 7,
       title: "pizza cool",
-      image: team2
+      image: ProfileOne
     },
     {
       id: 9,

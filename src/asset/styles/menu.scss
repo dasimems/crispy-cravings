@@ -91,4 +91,48 @@
         }
     }
 
+    .menu-nav-buttons{
+        width: 100%;
+
+        .product-nav-btn{
+            background: transparent;
+            border: 3px solid getColor("primary");
+            color: white;
+            padding: 8px 25px;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            color: getColor("primary");
+
+            &:not(:first-child){
+                margin-left: 10px;
+            }
+
+            
+            &:hover{
+                background: getColor("primary");
+                color: white;
+                transition: 0.5s ease all;
+                -webkit-transition: 0.5s ease all;
+                -moz-transition: 0.5s ease all;
+                -ms-transition: 0.5s ease all;
+                -o-transition: 0.5s ease all;
+            }
+
+        }
+
+        .next-prev-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .active-btn{
+            background: getColor("primary");
+            color: white;
+        }
+    }
+
 }

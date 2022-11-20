@@ -10,11 +10,12 @@ export const AppProvider = ({children}) => {
         message: ""    
     })
     const [products, setProducts] = useState([])
+    var [productCategories, setProductCategory] = useState([])
 
     const fetchProducts = async () => {
         try {
             const res = await axios.get(`${url}products`);
-            setProducts(res.data)
+            setProducts(res.data.products);
             setProductLoaded(prevState=> {
                 return({
                     ...prevState,
@@ -39,8 +40,30 @@ export const AppProvider = ({children}) => {
         fetchProducts();
     }, [])
 
+    useEffect(()=>{
+
+        var categories = [];
+
+        products.forEach(prod => {
+
+            var productCat = prod.category.name;
+
+            if(categories.filter(cat => cat.label === productCat).length < 1){
+                
+                categories.push({
+                    label: productCat,
+                    icon: ""
+                })
+            }
+        })
+
+        setProductCategory(categories);
+
+    }, [products])
+
+
     return(
-        <AppContext.Provider value={{products, setProducts, productLoaded}}>
+        <AppContext.Provider value={{products, setProducts, productLoaded, productCategories}}>
             {children}
         </AppContext.Provider>
     )

@@ -3,7 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight, FaPlus, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { dishes, productCategories, products, review, service, team } from "../utils/constant"
+import { dishes, productCategories, review, service, team } from "../utils/constant"
 
 import "../asset/styles/home.css"
 import { CustomerReview, Dishes, ImageAnimation, TeamCard } from "../components";
@@ -12,6 +12,7 @@ import VegetableOne from "../asset/images/vegetables_1.png"
 import VegetableTwo from "../asset/images/vegetables_2.png"
 import { useState } from "react";
 import { useEffect } from "react";
+import { useGlobalContext } from "../utils/context";
 
 function Home(props) {
 
@@ -20,6 +21,9 @@ function Home(props) {
     var reviewRef;
     const [productCats, setProductCats] = useState([]);
     const [presentCat, setPresentCat] = useState("");
+
+    
+    const {products} = useGlobalContext()
 
     var settings = {
       dots: false,
@@ -252,7 +256,7 @@ function Home(props) {
             
               <Slider ref={c => sliderRef = c} {...settings} className="slider-element">
 
-                    {products.map((product, index)=>{
+                    {products.slice(products.length - 12, ).map((product, index)=>{
                       return(
                         
                         <div key={index}>

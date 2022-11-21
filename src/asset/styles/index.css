@@ -186,6 +186,7 @@ body .dish-card .dish-image {
 }
 body .dish-card .dish-image img {
   width: 100%;
+  min-height: 100%;
 }
 body .dish-card .dish-name {
   font-family: righteous;

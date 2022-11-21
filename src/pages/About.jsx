@@ -1,14 +1,14 @@
 import { Button, Col, Row, Breadcrumb } from 'antd';
 import React from 'react'
 // import { Link } from 'react-router-dom';
-import { review, service, team } from '../utils/constant';
+import { review, service/* , team */ } from '../utils/constant';
 import ServiceImage from "../asset/images/service_image.png"
 import VegetableOne from "../asset/images/vegetables_1.png"
 import VegetableTwo from "../asset/images/vegetables_2.png"
 
 import "../asset/styles/about.css"
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { CustomerReview, TeamCard } from '../components';
+import { CustomerReview/* , TeamCard  */} from '../components';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 
@@ -119,7 +119,7 @@ const About = () => {
 
       </Row>
 
-      <Row justify="center" className="review teams about-review">
+      {/* <Row justify="center" className="review teams about-review">
 
         <Col span={22}>
 
@@ -145,7 +145,7 @@ const About = () => {
 
 
       
-      </Row>
+      </Row> */}
 
       <Row justify="center" className="review about-review">
 

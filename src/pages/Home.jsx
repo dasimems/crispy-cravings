@@ -3,14 +3,14 @@ import React from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight, FaPlus, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { dishes, review, service, team } from "../utils/constant";
+import { dishes, /* review, */ service/* , team */ } from "../utils/constant";
 
 import "../asset/styles/home.css";
 import {
-  CustomerReview,
+  // CustomerReview,
   Dishes,
   ImageAnimation,
-  TeamCard,
+  // TeamCard,
 } from "../components";
 import ServiceImage from "../asset/images/service_image.png";
 import VegetableOne from "../asset/images/vegetables_1.png";
@@ -21,7 +21,7 @@ import { useGlobalContext } from "../utils/context";
 
 function Home(props) {
   var sliderRef;
-  var reviewRef;
+  // var reviewRef;
   const [productCats, setProductCats] = useState([]);
   const [presentCat, setPresentCat] = useState("");
   const [fetchedProduct, setFetchedProduct] = useState([]);
@@ -64,41 +64,41 @@ function Home(props) {
     ],
   };
 
-  var reviewSettings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    initialSlide: 0,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // var reviewSettings = {
+  //   dots: false,
+  //   infinite: false,
+  //   speed: 500,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 3,
+  //   initialSlide: 0,
+  //   arrows: false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2,
+  //         infinite: true,
+  //         dots: true,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         initialSlide: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
   useEffect(() => {
     if (productCategories.length < 8) {
@@ -435,7 +435,7 @@ function Home(props) {
       
       </Row> */}
 
-      <Row
+      {/* <Row
         style={{ paddingTop: "3.5rem" }}
         justify="center"
         className="review teams"
@@ -463,7 +463,7 @@ function Home(props) {
             })}
           </Row>
         </Col>
-      </Row>
+      </Row> */}
     </>
   );
 }
